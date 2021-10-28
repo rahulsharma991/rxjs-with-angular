@@ -1,0 +1,28 @@
+<section>
+    <h2>{{title | titlecase}}</h2>
+    <div class="event-data">
+        <div class="card">
+            <button #addBtn class="btn">Add Videos </button>
+        </div>
+
+        <div class="box">
+            <h4>Added Videos</h4>
+
+            <ul *ngFor="let videos of videoArrays; let i =index">
+                <li (click)="removeEvents(i)">{{videos}}</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h4>Removed Videos</h4>
+
+            <ul *ngFor="let rmVideos of removedVideoArrays">
+                <li>{{rmVideos}}</li>
+            </ul>
+        </div>
+        <div>
+            <button class="btn" (click)="reset()">Reset</button>
+        </div>
+    </div>
+
+</section>

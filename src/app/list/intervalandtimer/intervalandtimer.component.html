@@ -1,0 +1,42 @@
+<section>
+    <h2>{{title | titlecase}}</h2>
+    <div class="event-data">
+        <div class="card">
+            <button #addBtn class="btn">Start Interval </button>
+        </div>
+
+        <div class="box">
+            <h4>Subscribe Interval Videos</h4>
+            <ul *ngFor="let interval of intervalData">
+                <li>{{interval}}</li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+            <h4>Unsubscribe Interval Videos</h4>
+            <button #removeBtnEvent class="btn">Stop Interval</button>
+
+        </div>
+    </div>
+
+    <div class="event-data">
+        <div class="card">
+            <button #addTimerBtn class="btn">Start Timer </button>
+        </div>
+
+        <div class="box">
+            <h4>Subscribe Timer Videos</h4>
+            <ul *ngFor="let timer of timerData">
+                <li>{{timer}}</li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+            <h4>Unsubscribe Timer Videos</h4>
+            <button #removeTimerBtnEvent class="btn">Stop Timer</button>
+
+        </div>
+    </div>
+</section>

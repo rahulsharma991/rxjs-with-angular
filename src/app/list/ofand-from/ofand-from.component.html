@@ -1,0 +1,33 @@
+<section>
+    <h2>{{title | titlecase}}</h2>
+    <div class="event-data">
+        <h2>Of Operator</h2>
+        <div class="card">
+            <button #ofBtn class="btn">Click here to see the details</button>
+        </div>
+
+        <div class="box" [hidden]="ofCollapse">
+            <h4>Of Operator takes arguments and convert that arguments into observable sequence.</h4>
+            <ul *ngFor="let ofOperator of ofData">
+                <li>{{ofOperator}}</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="event-data">
+        <h2>From Operator</h2>
+        <div class="card">
+            <button (click)="fromEvent()" class="btn">Click here to see the details</button>
+        </div>
+
+        <div class="box" [hidden]="fromCollapse">
+            <h4>From Operator create an observable from array, an array like object, a promise, an iterable object, or
+                an observer like object.</h4>
+            <ul *ngFor="let fromOperator of fromData">
+                <li>{{fromOperator}}</li>
+            </ul>
+
+        </div>
+    </div>
+</section>

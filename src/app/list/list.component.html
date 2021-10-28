@@ -1,0 +1,8 @@
+<div class="observables-lists">
+    <div class="observables-events" *ngFor="let events of observableEvents" (click)="eventRoutes(events?.event)">
+        <p>{{events?.event}}</p>
+
+    </div>
+</div>
+<router-outlet>
+</router-outlet>

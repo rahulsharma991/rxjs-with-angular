@@ -1,0 +1,14 @@
+.observables-lists {
+  height: 12rem;
+  overflow: scroll;
+  .observables-events {
+    background: black;
+    padding: 2rem;
+    color: white;
+    border-radius: 1rem;
+    width: 5rem;
+    margin: 2rem;
+    display: inline-block;
+    text-align: center;
+  }
+}

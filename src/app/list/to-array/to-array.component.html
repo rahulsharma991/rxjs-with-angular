@@ -1,0 +1,38 @@
+<section>
+    <h2>{{title | titlecase}}</h2>
+    <div class="event-data">
+        <div class="card">
+            <button (click)="toArrayConvert()" class="btn">Convert toArray </button>
+        </div>
+
+        <div class="box">
+            <h4>toArray method converts the data streams to an array when streams are completed.</h4>
+            <h4>toArray example with interval operator</h4>
+            <ul *ngFor="let interval of intervalData">
+                <li>{{interval}}</li>
+            </ul>
+            <p *ngIf="intervalData">{{intervalData}} -- final array value</p>
+        </div>
+
+        <div class="box">
+            <h4>Unsubscribe Interval Videos</h4>
+            <button (click)="removeInterval()" class="btn">Stop Interval</button>
+
+        </div>
+    </div>
+
+    <div class="event-data">
+        <div class="card">
+            <button (click)="oftoArrayConvert()" class="btn">of Operator </button>
+        </div>
+
+        <div class="box">
+            <h4>toArray method converts the data streams to an array when streams are completed.</h4>
+            <h4>toArray example with of operator</h4>
+            <ul *ngFor="let data of ofData">
+                <li>{{data}}</li>
+            </ul>
+            <p *ngIf="ofData">{{ofData}} -- final Data in array</p>
+        </div>
+    </div>
+</section>
